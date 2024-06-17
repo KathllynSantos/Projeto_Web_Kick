@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    background-color: var(--c_branco)
+    background-color: var(--c_branco);
 }
 
 .logo img {
@@ -39,14 +39,12 @@ nav ul {
     gap: 20px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    display: flex;
     justify-content: center;
 }
 
 nav ul li {
     padding: 10px 15px;
-    float: left;
+    position: relative;
 }
 
 nav ul li a,
@@ -61,7 +59,7 @@ nav ul li a,
 
 nav ul li a:hover,
 nav ul li a:focus,
-.dropdown:hover,
+.dropdown:hover .drop_btt,
 .drop_btt:hover {
     color: var(--c_branco);
     background-color: var(--c_rosaMedio);
@@ -122,7 +120,7 @@ label[for="btt_menu"] {
 
 @media(max-width: 800px) {
     header {
-        text-align: center;
+        flex-direction: column;
     }
 
     #btt_menu {
